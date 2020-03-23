@@ -2,10 +2,19 @@
  */
 
 .container-port {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 2;
   background-color: crimson;
+  position: absolute;
+  /* max-width: 100%;
+  height: 100%;
+  left:55%;
+  right: 75%; */
+ 
   
 }
 
@@ -14,15 +23,38 @@
 
 .fixed-left {
   background-color: blueviolet;
-  padding: 5%;
-  margin: 5%;
+  /* padding: 5%;
+  margin: 5%;*/
   border: 5px solid black;
-  max-width: 100%;
+  left: 0px;
+  top: 0px;
+    right: 100%;
+    bottom: 0px;
+    z-index: 0;
+    width: 25%;
+    height: 100%;
+  position: fixed;
+}
+
+.scroll-right {
+  background-color: chartreuse;
+  border: 5px solid rgb(255, 251, 0);
+  grid-column-end: 2;
+  grid-column-end: 4;
+  left: 62%;
+  top: 0;
+  z-index: 0;
+  right: 100%;
+  bottom: 50px;
+  
+  width: 100%;
+  height: 100%;
+  position: relative;
+  
 }
 
 .personal-info{
   background-color: cyan;
-  padding: 3%;
 }
 
 .logo-me {
@@ -36,12 +68,7 @@
 /* RIGHT SCROLL COLUMN
 */
 
-.scroll-right {
-  background-color: chartreuse;
-  border: 5px solid black;
-  padding: 1%;
-  margin: 5%;
-}
+
 
 
 /* RIGHT NAVBAR
@@ -56,7 +83,7 @@
 */
 
 .project {
-  max-width: 1000px;
+  max-width: 98%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,7 +118,7 @@
 
 .about-me {
   background-color: lightgreen;
-  width:100%;
+  width:98%;
   height:200px;
   margin: 10px;
   padding: 5px;
@@ -102,18 +129,22 @@
 
 .tech-skills {
   background-color: lightpink;
-  width:100%;
+  width:98%;
   height:200px;
   margin: 10px;
   padding: 5px;
 }
 
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
 /* RIGHT PUBLICATIONS
 */
 
 .publications {
   background-color: rgb(134, 1, 21);
-  width:100%;
+  width:98%;
   height:200px;
   margin: 10px;
   padding: 5px;
@@ -124,10 +155,16 @@
 
 .message-me{
   background-color: rgb(54, 55, 93);
-  width:100%;
+  width:98%;
   height:200px;
   margin: 10px;
   padding: 5px;
+}
+
+.input-msg {
+  width: 98%; 
+  height: 250px;
+  background-color: lightpink;
 }
 
 /* FOOTER
