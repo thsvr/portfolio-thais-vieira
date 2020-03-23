@@ -9,67 +9,70 @@
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 2;
   background-color: crimson;
-  position: absolute;
-  /* max-width: 100%;
-  height: 100%;
-  left:55%;
-  right: 75%; */
- 
-  
+  position: relative;
 }
+
+
 
 /* LEFT FIXED COLUMN
  */
 
-.fixed-left {
+ .fixed-left {
   background-color: blueviolet;
   /* padding: 5%;
   margin: 5%;*/
   border: 5px solid black;
   left: 0px;
   top: 0px;
-    right: 100%;
-    bottom: 0px;
-    z-index: 0;
-    width: 25%;
-    height: 100%;
-  position: fixed;
-}
-
-.scroll-right {
-  background-color: chartreuse;
-  border: 5px solid rgb(255, 251, 0);
-  grid-column-end: 2;
-  grid-column-end: 4;
-  left: 62%;
-  top: 0;
+  /* right: 100%; */
+  bottom: 0px;
   z-index: 0;
-  right: 100%;
-  bottom: 50px;
-  
-  width: 100%;
+  width: 25%;
   height: 100%;
-  position: relative;
-  
+  position: fixed;
+  padding-top: 50px;
 }
 
 .personal-info{
   background-color: cyan;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  
 }
 
 .logo-me {
   background-color: darkblue;
+  padding: 10px;
+  text-align: center;  
 }
 
 .contact-me {
   background-color: rgb(228, 168, 228);
+  padding-top: 100px;
+  text-align: center;
+  font-size: larger;
 }
 
 /* RIGHT SCROLL COLUMN
 */
 
-
-
+.scroll-right {
+  background-color: chartreuse;
+  padding: 15px;
+  border: 5px solid rgb(255, 251, 0);
+  /* grid-column-end: 2;
+  grid-column-end: 5; */
+  top: 0;
+  z-index: 0;
+  bottom: 50px;  
+  width: 75%;
+  right:0px;
+  height: auto;
+  position: absolute;  
+}
 
 /* RIGHT NAVBAR
 
@@ -119,7 +122,7 @@
 .about-me {
   background-color: lightgreen;
   width:98%;
-  height:200px;
+  height:auto;
   margin: 10px;
   padding: 5px;
 }
