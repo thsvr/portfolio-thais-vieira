@@ -12,8 +12,6 @@
   position: relative;
 }
 
-
-
 /* LEFT FIXED COLUMN
  */
 
@@ -30,12 +28,12 @@
   width: 25%;
   height: 100%;
   position: fixed;
-  padding-top: 50px;
+  padding-top: 15px;
 }
 
 .personal-info{
   background-color: cyan;
-  padding: 10px;
+  padding:10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,13 +43,13 @@
 
 .logo-me {
   background-color: darkblue;
-  padding: 10px;
+  padding: 1px;
   text-align: center;  
 }
 
 .contact-me {
   background-color: rgb(228, 168, 228);
-  padding-top: 100px;
+  padding-top: 20px;
   text-align: center;
   font-size: larger;
 }
